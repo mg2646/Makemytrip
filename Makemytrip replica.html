@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip</title>
+    <link rel="icon" href="MMYT.png">
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="MMYT_BIG.png" width="100px"><div class="logo"></div>
+        <div class="menu">
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Trains</a>
+            <a href="#">Buses</a>
+            <a href="#">Cabs</a>
+            <a href="#">Forex</a>
+            <a href="#">Travel Insurance</a>
+        </div>
+    </div>
+
+    <div class="flight-form">
+        <center><h2>Book Your Flight</h2></center>  
+        <div class="radio-group">
+            
+            <center><label><input type="radio" name="trip" checked> One Way</label></center>
+            <center><label><input type="radio" name="trip"> Round Trip</label></center>
+            <center><label><input type="radio" name="trip"> Multi City</label></center>
+            
+        </div>
+        <style>
+            .radio-group {
+                display: flex;
+                justify-content: center;  /* Centers horizontally */
+                gap: 20px;  /* Adds spacing between options */
+                margin-top: 10px;
+            }
+        </style>
+
+        <label>From</label>
+        <input type="text" placeholder="Delhi (DEL)">
+
+        <label>To</label>
+        <input type="text" placeholder="Bengaluru (BLR)">
+
+        <label>Departure Date</label>
+        <input type="date">
+
+        <label>Travellers & Class</label>
+        <select>
+            <option>1 Traveller - Economy</option>
+            <option>2 Travellers - Economy</option>
+            <option>Business Class</option>
+        </select>
+        
+<center>    
+        <button class="search-btn">Search</button>
+</center>
+        
+    </div>
+
+    <div class="offers">
+        <h2>Latest Offers</h2>
+        <div class="offer-box">
+            <p><strong>PayDay Sale by Akasa Air</strong></p>
+            <p>Get exclusive discounts on domestic flights.</p>
+        </div>
+        <div class="offer-box">
+            <p><strong>Discounts on Hotels</strong></p>
+            <p>Special discounts on premium hotels.</p>
+        </div>
+    </div>
+
+</body>
+</html>
